@@ -1,0 +1,57 @@
+{
+  "apiEndpoint": "http://localhost:8090/api/v1",
+  "storageKey": "persist:storage",
+  "theme": {
+    "light": {
+      "dark_green_gray": "dark_green_gray",
+      "light_green_grey": "light_green_grey",
+      "soft_grey": "soft_grey",
+      "off_white": "off_white",
+      "white": "white",
+      "red": "red",
+      "green": "green",
+      "orange": "orange",
+      "light_blue": "light_blue",
+      "blue": "blue"
+    },
+    "night": {
+      "purple": "purple-night",
+      "purple1": "purple1-night",
+      "purple2": "purple2-night",
+      "orange": "orange-night",
+      "yellow": "yellow-night",
+      "text": "text-night",
+      "white": "white-night",
+      "grey": "grey-night",
+      "grey2": "grey2-night",
+      "background": "background-night",
+      "modal-background": "modal-background-night",
+      "green": "green-night",
+      "red": "red-night",
+      "black": "black-night"
+    }
+  },
+  "language": {
+    "uzb": "uzb",
+    "eng": "eng",
+    "rus": "rus"
+  },
+  "defaultLanguage": "uzb",
+  "defaultMode": "light",
+  "aa": {
+    "isAuthenticated": true,
+    "auth": {
+      "token": {
+        "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYjlhN2I2OS03Mjk4LTQ5YzAtMjQzOTY1YWQtYTVlMy00MjFjLWI2ODctOTI5N2ZlMTAxNTg5LWFlYzAtMjI2NDJlYzJhZjRhIiwiaWF0IjoxNzEwMzAyNjQ5LCJleHAiOjE3MTc1MDI2NDl9.ho65EYQTdKucCxCSQnAZTyUyao-mPvS9itJOBMV1P1I",
+        "refreshToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNDM5NjVhZC1hNWUzLTQyMWMtYjY4Ny05Mjk3ZmUxMDE1ODkiLCJpYXQiOjE3MTAzMDI2NDksImV4cCI6MTcxMDkwNzQ0OX0.mYvftQsYOytZuao85Z-NTDTdpO8N8K4HvqfQUUpcWirpJZ64R1EooHKSXQfbpHUs14R13KYMyQO5lkP_ZI1-Gg",
+        "tokenType": "Bearer ",
+        "defaultPage": "ROLE"
+      }
+    },
+    "settings": {
+      "languageCode": "uzb"
+    }
+  }
+}
+
+
