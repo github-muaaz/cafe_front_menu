@@ -1,10 +1,11 @@
+import {useRef} from "react";
 import {Stack, useMediaQuery} from "@mui/material";
 import Box from "@mui/material/Box";
 
 import withLanguage from "../../../language/withLanguage";
 import Button from "../../reusable/button";
 import QrCode from "../../reusable/qr-code";
-import {useRef} from "react";
+import configJson from "../../../config.json";
 
 const LogoutModal = ({t, onClose}) => {
 
@@ -32,7 +33,7 @@ const LogoutModal = ({t, onClose}) => {
             }}
         >
             <div ref={qrRef}>
-            <QrCode value={'https://l.com'}/>
+            <QrCode value={configJson["qr-link"]}/>
             </div>
 
             <Box

@@ -1,6 +1,7 @@
 {
   "apiEndpoint": "http://43.202.57.46/api/v1",
   "storageKey": "persist:storage",
+  "qr-link": "https://cafe-front-menu-1wzkf7yxq-github-muaazs-projects.vercel.app/menu/food",
   "theme": {
     "light": {
       "dark_green_gray": "dark_green_gray",
