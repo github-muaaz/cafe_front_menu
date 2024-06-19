@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "http://localhost:8090/api/v1",
+  "apiEndpoint": "http://43.202.57.46/api/v1",
   "storageKey": "persist:storage",
   "theme": {
     "light": {
