@@ -14,7 +14,7 @@ import CustomModal from "../../reusable/modal";
 import CategoryContext from "../../../context/category-context";
 import UtilConstants from "../../../constants/util-constants";
 
-const Footer = ({ parentCategories }) => {
+const Footer = ({t, parentCategories }) => {
     const {pathname} = useLocation();
     const containerRef = useRef();
     const [modalBody, setModalBody] = useState(null);
@@ -45,9 +45,7 @@ const Footer = ({ parentCategories }) => {
         }
     }, [containerRef, pathname]);
 
-    const handleModalClose = () => {
-        setModalBody(null);
-    }
+    const handleModalClose = () => setModalBody(null);
 
     return (
         <React.Fragment>
@@ -121,7 +119,7 @@ const Footer = ({ parentCategories }) => {
                                             variant={"tiny"}
                                             sx={{textAlign: "center", textTransform: "capitalize"}}
                                         >
-                                            {category.name}
+                                            {t(category.name)}
                                         </Typography>
                                     </Button>
                                 </div>
