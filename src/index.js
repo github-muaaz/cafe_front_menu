@@ -10,7 +10,6 @@ import Language from "./language";
 import AuthLoader from "./service/auth/authLoader";
 
 import 'react-toastify/dist/ReactToastify.css'
-// cafe-back-production.up.railway.app
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

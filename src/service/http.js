@@ -6,8 +6,10 @@ import storage from "../store/local-storage";
 import history from "../router/history";
 import configJson from "../config.json";
 
+const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+
 const request = axios.create({
-    baseURL: window.location.hostname === 'localhost' ? '' : '/proxy',
+    baseURL: `${PROXY}`,
     // Adding withCredentials to support sending cookies if needed
     withCredentials: true,
 });
