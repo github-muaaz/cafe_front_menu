@@ -7,7 +7,7 @@ import history from "../router/history";
 import configJson from "../config.json";
 
 const request = axios.create({
-    baseURL: configJson.apiEndpoint,
+    baseURL: 'localhost' ? configJson.apiEndpoint : '/proxy',
     // Adding withCredentials to support sending cookies if needed
     withCredentials: true,
 });
