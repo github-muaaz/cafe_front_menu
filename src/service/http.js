@@ -8,6 +8,8 @@ import configJson from "../config.json";
 
 const request = axios.create({
     baseURL: configJson.apiEndpoint,
+    // Adding withCredentials to support sending cookies if needed
+    withCredentials: true,
 });
 
 const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -47,7 +49,7 @@ request.interceptors.response.use(
             // store.dispatch({ type: AuthAction.CHECK_AUTH.FAILURE });
         }
 
-        toast.error(error?.response?.data?.errors?.[0]?.message || "error occured")
+        toast.error(error?.response?.data?.errors?.[0]?.message || "error occurred");
 
         return Promise.reject(error);
     }
