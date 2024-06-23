@@ -12,8 +12,6 @@ const request = axios.create({
     withCredentials: true,
 });
 
-const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
 // Request interceptor
 request.interceptors.request.use(
     (config) => {
@@ -25,7 +23,6 @@ request.interceptors.request.use(
             if (token)
                 config.headers.Authorization = `${get(token, "tokenType")} ${get(token, "accessToken")}`;
         }
-        config.headers.TimeZone = timezone;
         return config;
     },
     (error) => {
